@@ -1,0 +1,91 @@
+# LED configuration per arcade/game
+# Valid LEDs are ABXYLR, or 0 for none
+# Format: <arcade name> <game name> <LEDs>
+# game name can be 'all' 
+
+arcade 1943      YX     
+arcade aburner2  YX
+arcade arkanoid  Y 
+arcade asteroid  YXL
+arcade berzerk   Y
+arcade btime     Y
+arcade bublbobl  YX
+arcade centipdb  Y
+arcade ddragon   YXL
+arcade defender  ABYR
+arcade digdug    Y
+arcade dkong     Y
+arcade frogger   0
+arcade galaga    Y
+arcade galaxian  Y
+arcade gauntlet  YX
+arcade invaders  Y
+arcade joust     Y
+arcade kungfum   AR
+arcade megaman   YXL
+arcade mspacman  0
+arcade pacman    0
+arcade paperboy  AR
+arcade phoenix   YX
+arcade pitfall2  Y
+arcade polepos   YXL
+arcade popeye    Y
+arcade qbert     0
+arcade rampage   YX
+arcade simpsons  YX
+arcade starwars  0
+arcade tekken3   XLAR
+arcade tmnt      0
+arcade zaxxon    Y
+
+atari2600  all   B 
+
+snes DonkeyKongCountry              ABY
+snes Doom                           ABXYLR
+snes DragonsLair                    ABXY
+snes LegendofZelda_LinkToPast       AXYR
+snes MegaManX                       BY
+snes MortalKombat2                  ABXYLR
+snes MortalKombat                   ABXYLR
+snes MsPacMan                       0
+snes StreetFighter2                 AXLR
+snes StreetFighter2Turbo            ABXLR
+snes SuperMarioKart                 ABXYLR
+snes SuperMarioWorld2_YoshisIsland  ABYLR
+snes SuperMarioWorld.smc            ABXYLR
+snes UltimateMortalKombat3          ABXYLR
+
+psx TonyHawksProSkater2             ABXYLR
+
+nes DonkeyKongClassics              A
+nes DoubleDragon2_Revenge           AB
+nes DoubleDragon                    AB
+nes Excitebike                      AB
+nes Joust                           AB
+nes LegendOfZelda                   AB
+nes MarioBros                       AB
+nes MegaMan                         AB
+nes Metroid                         AB
+nes Millipede                       A
+nes SuperMarioBros2                 AB
+nes SuperMarioBros3                 AB
+nes SuperMarioBros_DuckHunt         A
+nes TeenageMutantNinjaTurtles       AB
+nes Tetris                          AB
+nes Zelda2_AdventureOfLink          AB
+
+megadrive Frogger                   0
+megadrive MortalKombat2             ABY
+megadrive MortalKombat              ABY
+megadrive SonicTheHedgehog          ABY
+megadrive SpaceInvaders             A
+megadrive StreetFighter2_Champion   ABXYLR
+megadrive TheSmurfs                 B
+megadrive TinyToonAdventures_BustersTreasure ABY
+
+gba DonkeyKong                      A
+gba SuperMarioBros                  A
+
+coleco DonkeyKong                   A
+coleco DonkeyKongJr                 A
+coleco SmurfRescueInGargamelsCastle A
