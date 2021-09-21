@@ -46,7 +46,7 @@ You can run your own code at game-start and game-end by creating these two files
     */opt/retropie/configs/all/runcommand-onend.sh*  
 These receive the game information as arguments. The onstart script looks for a simple text 
 file '/home/pi/led/config' that contains game emulator, game name and button LEDs to light up. 
-See the scripts and the simple text configuration file in this repo.  
+See the scripts and the simple text configuration file in this repo (config).  
 The format is:  
     <emulator name> <rom name without extension> <leds to light>
     example:   arcade 1943 AB
