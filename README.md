@@ -17,7 +17,7 @@ To build the "led" executable:
      - sudo make install
 
 2. Then compile led.c with: 
-    gcc -Wall led.c -o led -l bcm2835
+   - gcc -Wall led.c -o led -l bcm2835
 
 Remember to enable i2c in raspi-config
 Uses I2C port on rpi pins 3 (SDA) and 5 (SCL)
