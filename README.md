@@ -44,8 +44,9 @@ Usage:
 You can run your own code at game-start and game-end by creating these two files:  
     */opt/retropie/configs/all/runcommand-onstart.sh*  
     */opt/retropie/configs/all/runcommand-onend.sh*  
-These receive the game information as arguments. The onstart script looks for a simple text file '/home/pi/led/config' that  
-contains game emulator, game name and button LEDs to light up. See the scripts and the simple text configuration file in this repo.  
+These receive the game information as arguments. The onstart script looks for a simple text 
+file '/home/pi/led/config' that contains game emulator, game name and button LEDs to light up. 
+See the scripts and the simple text configuration file in this repo.  
 The format is:  
     <emulator name> <rom name without extension> <leds to light>
     example:   arcade 1943 AB
@@ -54,11 +55,12 @@ arcade name and leds are case in-sensitive, file name is case sensitive
 ```
 
 ## How do I get the LED “breathe” sequence to run while the machine is loading?
-
+```
 Start the LED “breathe” sequence before splash screen and stop after by calling this LED control application as described here:  
-Edit */opt/retropie/supplementary/splashscreen/asplashscreen.sh*  
-Just before the “if” block (that shows the video/image) add:   
-*/home/pi/led/led -i 200 &*   # run led breathe sequence while loading  
-After that block (after “fi”), add:   
-*/home/pi/led/led -l BA*   # stop sequence and light the select & back buttons  
-Reboot and verify operation  
+1. Edit */opt/retropie/supplementary/splashscreen/asplashscreen.sh*  
+2. Just before the “if” block (that shows the video/image) add:   
+   - */home/pi/led/led -i 200 &*   # run led breathe sequence while loading  
+3. After that block (after “fi”), add:   
+   - */home/pi/led/led -l BA*   # stop sequence and light the select & back buttons  
+4. Reboot and verify operation  
+```
