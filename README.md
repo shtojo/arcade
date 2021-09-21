@@ -56,7 +56,8 @@ arcade name and leds are case in-sensitive, file name is case sensitive
 
 ## How do I get the LED “breathe” sequence to run while the machine is loading?
 ```
-Start the LED “breathe” sequence before splash screen and stop after by calling this LED control application as described here:  
+Start the LED “breathe” sequence before splash screen and stop after 
+by calling this LED control application as described here:  
 1. Edit */opt/retropie/supplementary/splashscreen/asplashscreen.sh*  
 2. Just before the “if” block (that shows the video/image) add:   
    - */home/pi/led/led -i 200 &*   # run led breathe sequence while loading  
