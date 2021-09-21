@@ -24,6 +24,13 @@ Uses I2C port on rpi pins 3 (SDA) and 5 (SCL)
 
 Button to IO map: A = IO-4, B = IO-5, X = IO-6, Y = IO-7, L = IO-12, R = IO-13
 
+<div class="panel panel-warning">
+**Warning**
+{: .panel-heading}
+<div class="panel-body">
+
+
+
 Usage:  led [options]  
 - -r </tab>  reads the entire SX1509 register space  
         -w <addr> <data...>  hex, write data to address  
@@ -35,3 +42,7 @@ Usage:  led [options]
         led -l 0             all led buttons off  
         led -r               read all registers  
         led -w 04 2a ff      write 2a ff starting at address 04  
+   
+   </div>
+</div>
+
