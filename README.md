@@ -40,3 +40,19 @@ Usage:
       led -w 04 2a ff      write 2a ff starting at address 04  
 
 ```
+
+##How do I get my button LEDs to light only the buttons used for each game?
+
+You can run your own code at game start and game end by creating these two files:
+/opt/retropie/configs/all/runcommand-onstart.sh
+/opt/retropie/configs/all/runcommand-onend.sh
+These receive the game information as arguments. I created a script that looks for a simple text file with each game name and the LEDs to light for that game. To add a game is as easy as adding a line to that text file.
+
+##How do I get the LED “breathe” sequence to run while the machine is loading?
+Start the LED “breathe” sequence before splash screen and stop after by calling my LED control application as described here:
+Edit /opt/retropie/supplementary/splashscreen/asplashscreen.sh
+Just before the “if” block (that shows the video/image) add: 
+/home/pi/led/led -i 200 &   # run led breathe sequence while loading
+After that block (after “fi”), add: 
+/home/pi/led/led -l BA   # stop sequence and light the select & back buttons
+Reboot and verify operation
