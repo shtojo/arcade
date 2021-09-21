@@ -46,7 +46,11 @@ Usage:
 You can run your own code at game-start and game-end by creating these two files:  
 /opt/retropie/configs/all/runcommand-onstart.sh  
 /opt/retropie/configs/all/runcommand-onend.sh  
-These receive the game information as arguments. I created a script that looks for a simple text file with each game name and the LEDs to light for that game. To add a game is as easy as adding a line to that text file.  
+These receive the game information as arguments. The onstart script looks for a simple text file '/home/pi/led/config' that contains game emulator, game name and button LEDs to light up. See the scripts and the simple text configuration file in this repo. The format is:  
+<emulator name> <rom name without extension> <leds to light>
+example:   arcade 1943 AB
+The <led> options are: [ABXYLR] or 0
+arcade name and leds are case in-sensitive, file name is case sensitive
 
 ## How do I get the LED “breathe” sequence to run while the machine is loading?
 
