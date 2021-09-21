@@ -7,16 +7,16 @@ Tested with Raspberry Pi running RetroPie.
 
 To build the "led" executable:
 
-First, install bcm2835 library on rpi:
- Get latest "bcm2835-1.xx.tar.gz" file from www.airspayce.com/mikem/bcm2835/
- Copy to /home/pi then "tar zxvf bcm2835-1.68.tar.gz"  (creates subfolder)
- cd bcm2835-1.68/ then
-    ./configure
-    make
-    sudo make check
-    sudo make install
+1. First, install bcm2835 library on rpi:
+   - Get latest "bcm2835-1.xx.tar.gz" file from www.airspayce.com/mikem/bcm2835/
+   - Copy to /home/pi then "tar zxvf bcm2835-1.68.tar.gz"  (creates subfolder)
+   - cd bcm2835-1.68/ then
+     - ./configure
+     - make
+     - sudo make check
+     - sudo make install
 
-Then compile led.c with: 
+2. Then compile led.c with: 
     gcc -Wall led.c -o led -l bcm2835
 
 Remember to enable i2c in raspi-config
