@@ -42,8 +42,8 @@ Usage:
 ## How do I get my button LEDs to light only the buttons used for each game?
 ```
 You can run your own code at game-start and game-end by creating these two files:  
-    */opt/retropie/configs/all/runcommand-onstart.sh*  
-    */opt/retropie/configs/all/runcommand-onend.sh*  
+    /opt/retropie/configs/all/runcommand-onstart.sh  
+    /opt/retropie/configs/all/runcommand-onend.sh  
 These receive the game information as arguments. The onstart script looks for a simple text 
 file '/home/pi/led/config' that contains game emulator, game name and button LEDs to light up. 
 See the scripts and the simple text configuration file in this repo (config).  
